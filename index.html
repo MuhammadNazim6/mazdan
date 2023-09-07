@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazda Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <link rel="stylesheet" href="logi.css">
+
+  
+</head>
+
+<body>
+
+<div class="testdiv">
+
+  
+<nav class="maincontainer">
+  <div class="navbar bg-body-tertiary nav1 ">
+    <div class="container-fluid bg-black ">
+      <!-- logo mazda -->
+       <img class=mazdalogo src="images/mazdalogo.png" alt="logo">
+      
+      <!-- nav items dropdown 1 -->
+       <div class="test">
+        <div class="dropdown-container">
+          <button class="dropdown-button" id="about1"onmouseover="showDropdown1()"  >ABOUT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+          <div class="dropdown-content" id="about">
+              <a href="#" class="text-white">About Home<br> </a>
+              <a href="#" class="text-white"><br>Message from the<br>president/Corporate<br>philosophy/2030<br>ViSION</a>
+              <a href="#" class="text-white"><br>Company outline</a>
+              <a href="#" class="text-white"><br>Mid-term management<br>Plan Update and <br>Management policy up<br>to 2030</a>
+              <a href="#" class="text-white"><br>Executives</a>
+            </div>
+        </div>
+
+        <!-- nav items dropdown 2 -->
+        <div class="dropdown-container ">
+          <button class="dropdown-button " id="innovation1" onmouseover="showDropdown2()"  >INNOVATION</button>
+          <div class=" dropdown-content" id="innovation">
+            <a href="#" class="text-white">Innovation Home<br> </a>
+            <a href="#" class="text-white">Heritage</a>
+            <a href="#" class="text-white">Design</a>
+            <a href="#" class="text-white">Technology Vision</a>
+            <a href="#" class="text-white">Safety</a>
+            <a href="#" class="text-white">Environment</a>
+            <a href="#" class="text-white">Motorsports</a>
+          </div>
+        </div>
+
+        <span id="newsroom1" class="text-white">NEWSROOM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        
+        <!-- nav items dropdown 3 -->
+        <div class="dropdown-container">
+          <button class="dropdown-button" id="sustainability1" onmouseover="showDropdown3()" > SUSTAINABILITY</button>
+          <div class="dropdown-content" id="sustainability">
+              <a href="#"  class="text-white">Sustainability Home<br> <img class="navbarimage" src="images/navbarimage.jpg"></a>
+              <a href="#"  class="text-white">Basic Policy On<br> Sustainability</a>
+              <a href="#"  class="text-white">Materiality<br></a>
+              <a href="#"  class="text-white">External evaluations<br><br></a>
+              <a href="#"  class="text-white">Social contribution Initiatives</a>
+              <a href="#"  class="text-white">Supporting initiatives</a>
+             
+          </div>
+        </div>   
+
+       
+       
+         <span id="careers1" class="text-white">CAREERS &nbsp;&nbsp;&nbsp;&nbsp;</span>       
+        
+         <!-- Searchbar -->
+        
+          <input class="input-search" type="text" placeholder="  Search...">
+         
+        </div>
+
+     
+
+      <!-- Mazda near you -->
+      <p class="d-inline-flex gap-1  ">
+        <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#mazdanearyou" aria-expanded="false" aria-controls="collapseExample">
+          MAZDA NEAR YOU
+        </button>
+      </p>
+
+      <!-- dropdown for Search icon-->
+      <div class="collapse" id="search">
+        <div class="card searchbtnbody">
+         <input type="text" >
+        </div>
+      </div>
+      <!-- dropdown for MAZDA NEAR YOU -->
+      <div class="collapse" id="mazdanearyou">
+        <div class="card card-body">
+          <p class="some-text">We think you are in <b>India</b> <br><br> <b>Mazda Motors India Limited<br>T:44-1322-622600<br>Riverbridge House Anchor<br>Boulevard, Dartford,Kent,<br>DA2 6SL,UK</b> </p>
+        </div>
+      </div>
+
+      <!-- Search icon -->
+      <div><p class="d-inline-flex gap-1  ">
+        <i class="bi bi-search" data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="collapseExample"></i>
+      </p>
+      </div>
+
+    
+
+      <!-- Hamburger icon -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="bi bi-list"></span>
+       </button>
+     
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"></h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <!-- off-canvas rightside -->
+       
+        <div class="offcanvas-body">
+
+            <!-- 1st list -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">About home</a></li>
+              <li><a class="dropdown-item" href="#">Message from the president /<br>Corporate Philosophy / 2030 <br>VISION</a></li>
+              <li><a class="dropdown-item" href="#">Company outline</a></li>
+              <li><a class="dropdown-item" href="#">Mid-term management plan update <br> and management policy up to 2030</a></li>
+              <li><a class="dropdown-item" href="#">Executives</a></li>
+              <li><a class="dropdown-item" href="#">Major facilities</a></li>
+              <li><a class="dropdown-item" href="#">Major affiliates home</a></li>
+              <li><a class="dropdown-item" href="#">About home</a></li>
+              <li><a class="dropdown-item" href="#">History</a></li>
+              <li><a class="dropdown-item" href="#">Mazda museum</a></li>
+              
+            </ul>
+          </li>
+
+           <!-- 2nd list -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Innovation
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Innovation Home</a></li>
+              <li><a class="dropdown-item" href="#">Heritage</a></li>
+              <li><a class="dropdown-item" href="#">Design</a></li>
+              <li><a class="dropdown-item" href="#">Technology vision</a></li>
+              <li><a class="dropdown-item" href="#">Safety</a></li>
+              <li><a class="dropdown-item" href="#">Environment</a></li>
+              <li><a class="dropdown-item" href="#">Motorsports/a></li>
+              <li><a class="dropdown-item" href="#">e sports</a></li>
+          
+            </ul>
+          </li>
+          <!-- 3rd list -->   
+           
+          <li class="nav-item">
+            <a class="nav-link" href="#"> NEWSROOM</a>
+          </li>
+           <!-- 4th list -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sustainability
+            </a>
+
+           
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+             <!-- 5th list -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Investors
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+      
+    </div>
+  
+</nav>
+
+</div>  
+
+
+
+<!-- main image -->
+
+<div class="imageblock" id="myImageBlock"  >
+  <div class="forcolor" >
+  <img class="img1" src="images/mazdaimage1.jpeg" alt="img1 ">
+
+
+    <div class="container-lg my-1">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center align-items-center ">
+          <div class="p-1 text-light "><div class=" card text-bg-warning container-middle">
+            <img src="images/mazdaimage2.jpg" class="card-img " alt="...">
+            <div class="card-img-overlay fs-sm-1card-text">
+            
+              <p class="middle-text fs-sm-1card-text text-white text-center ms-5 bg-dark  ">If you are interested in purchasing a Mazda vehicle,
+              
+                please visit your regional Mazda Website.</p>
+              
+            </div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+
+  <div class=" container-lg my-1 ">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="container-fluidp-1 bg-dark text-light"><div class=" card text-bg-warning container-middle">
+          <img src="images/mazdaimage3.jpg" class="card-img " alt="...">
+          <div class="card-img-overlay ">
+           
+            <p class="middle-text card-text text-white text-center ">CORPORATE INFORMATION <br> About <br>News <br> Sustainability <br> Investors</p>
+            
+          </div>
+        </div></div>
+      </div>
+      <div class="col-12 col-md-6"> 
+        <div class="p-1 bg-dark text-light"><div class=" card text-bg-warning container-middle">
+          <img src="images/mazdaimage4.jpg" class="card-img " alt="...">
+          <div class="card-img-overlay">
+           
+            <p class="middle-text card-text text-white text-center  ">EXPLORE OUR CULTURE OF INNOVATION <br> Design <br> Safety <br> Mazda Technical Review</p>
+            
+          </div>
+        </div></div>
+      </div>
+    
+    </div>
+  </div>
+
+  </div>
+
+  <div class=" container-fluid flu">
+   <div class="row "> 
+    <div class= "new1 col-12 col-md-12 col-lg-6 p-4 text-light "><h5> NOTIFICATION</h5> <br><h6>JUNE 27 , 2023</h6><p>"Message from the president / Corporate Philosophy /<br> 2030 Vision" updated</p><hr></div>
+    <div class= "new2 col-12 col-md-12 col-lg-6 p-4 text-light"><h5>NEWS RELEASE</h5><br><h6>SEPTEMBER 1, 2023</h6><p>Personnel Changes</p><hr></div>
+   </div>
+
+   <div class="row"> 
+    <div class= "new1 col-12 col-md-12 col-lg-6 p-4 text-light"><h6>NOVEMBER 18 , 2021</h6><p>Mazda Stories Mazda Rotary Engine Stories 2021<br></p><hr></div>
+    <div class= "new2 col-12 col-md-12 col-lg-6  p-4 text-light"><h6>August 30, 2023</h6><p>Mazda production and sales Result for july 2023</p><hr></div>
+   </div>
+
+   <div class="row"> 
+    <div class= "new1 col-12 col-md-12 col-lg-6 p-4 text-light"><h6>DECEMBER 18 , 2019</h6><p>On January 30, 2020, Mazda Motor Corporation will be celebrating its 100th anniversary.<br></p><hr></div>
+    <div class= "new2 col-12 col-md-12 col-lg-6 p-4 text-light"><h6>AUGUST 9, 2023 </h6><p>Notice of Determination of Terms for Stock options as Compensation </p><hr></div>
+   </div>
+
+   <div class="row"> 
+    <div class= "new1 col-12 col-md-12 col-lg-6 p-4 text-light"><h6>MARCH 25 , 2019</h6><p>What is "Skyactiv-Vehicle Architecture," Mazda's structural <br>technology next-generation vehicles?</p><hr></div>
+    <div class= "new2 col-12 col-md-12 col-lg-6 p-4 text-light"><h6> AUGUST 8,2023</h6><p>Fiscal Year Ending March 2024 First Quarter Financial Results Announcement</p><hr></div>
+   </div>
+
+
+   <div class="row"> 
+    <div class= "new1 col-12 col-md-12 col-lg-6 p-4 text-light"></div>
+    <div class= "new2 col-12 col-md-12 col-lg-6 p-4 text-light"><h6> AUGUST 1,2023</h6><p>Personel Changes</p><hr></div>
+   </div>
+
+  </div>
+
+
+  </div>
+  
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="logi.js"></script>
+
+</body>
+</html>

@@ -292,3 +292,40 @@ outline:none;
   background-color: rgb(40, 41, 40);
   height: max-content;
 }
+
+@media screen and (max-width:999px){
+  .footer-acco{
+  display: block;
+  background-color: blue;
+  }
+
+  .accordion-item{
+    background-color: #333;
+    color:white;
+  }
+  .accordion-button{
+    background-color: #333;
+    color: rgb(171, 177, 177);
+  }
+  .accordion-button:focus{
+    background-color: #333;
+  }
+  .large-footer{
+    display: none;
+  }
+}
+
+@media screen and (min-width:999px){
+  .footer-acco{
+  display: none;
+  }
+  .foot-font{
+    font-size: small;
+  }
+  .large-footer{
+    display: block;
+  }
+  .col-lg-2>p{
+    cursor: pointer;
+  }
+}

@@ -64,3 +64,12 @@ fifth.addEventListener("mouseover",hideDropdown1);
 fifth.addEventListener("mouseover",hideDropdown2);
 fifth.addEventListener("mouseover",hideDropdown3);
 
+
+
+
+function alertf(){
+}
+
+
+var newalert=document.getElementById("for-alert");
+newalert.addEventListener("click",alertf);
